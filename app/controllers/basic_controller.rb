@@ -53,7 +53,7 @@ class BasicController < ApplicationController
               keyboard: {
                 type: "buttons",
                 buttons: ["선택 1", "선택 2", "선택 3"]
-              }
+              }ㅇ
             }
             render json: @msg, status: :ok
         end
