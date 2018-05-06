@@ -23,7 +23,7 @@ class UsersController < ApplicationController
                     type: "text"
                   }
                 }
-                render json: @response, status: :ok
+                
             else
                 @user.name = @response
                 @user.save
@@ -36,18 +36,20 @@ class UsersController < ApplicationController
                     buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
                   }
                 }
-                render json: @response, status: :ok
+                
             end
             
         else
 #나에게 가장 잘 맞는 청바지 추천
-          if  @response == "나에게 가장 잘맞는 청바지추천"
+
+             if @response == "나에게 가장 잘맞는 청바지추천"
                 @response = {
                   message: {
                       text: "#{@user.name}님이 나에게 가장 잘맞는 청바지추천을 누르셨습니다. 추천서비스를 위해 간단한 설문을 진행하겠습니다 #{@user.name}님의 키는 어느 정도인가요?."
                   },
                   keyboard: {
                     type: "buttons",
+
                     buttons: ["청바지,166~170", "청바지,171~175"]
                   }
                 }
@@ -55,6 +57,7 @@ class UsersController < ApplicationController
 #키 설정 165 이하부터
                         
              #나에게 가장 잘 맞는 정장바지 추천   
+
                             
            elsif @response == "나에게 가장 잘맞는 정장바지추천"
                 @response = {
@@ -64,6 +67,7 @@ class UsersController < ApplicationController
                   keyboard: {
                     type: "buttons",
                     buttons: ["정장바지,166~170", "정장바지,170~175"]
+
                   }
                 }
                 render json: @response, status: :ok
@@ -75,6 +79,7 @@ class UsersController < ApplicationController
                   },
                   keyboard: {
                     type: "buttons",
+
                     buttons: ["반바지,166~170", "반바지,170~175"]
                   }
                 }
@@ -157,9 +162,7 @@ class UsersController < ApplicationController
                   }
                 }
                  render json: @response, status: :ok
-           
-           end
+             end
         end            
     end
 end
-
