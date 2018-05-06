@@ -1,24 +1,5 @@
-# README
+# kakao talk chatBot about MoreFit
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 당신에게 맞는 핏을 찾아 드립니다
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+캡스톤 챗봇 개발 완료
