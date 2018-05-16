@@ -23,7 +23,7 @@ class UsersController < ApplicationController
                     type: "text"
                   }
                 }
-                
+                render json: @response, status: :ok
             else
                 @user.name = @response
                 @user.save
@@ -36,9 +36,9 @@ class UsersController < ApplicationController
                     buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
                   }
                 }
-                
+                 render json: @response, status: :ok
             end
-            
+        
         else
 #나에게 가장 잘 맞는 청바지 추천
 
@@ -1904,7 +1904,7 @@ class UsersController < ApplicationController
                                                                   },
                                                                   keyboard: {
                                                                     type: "buttons",
-                                                                    buttons: ["청바지-171~175-51kg~60kg-30-스키니핏", "청바지-171~175-51kg~60kg-30-슬림 스트레이트핏", "청바지-171~175-51kg~60kg-30-레귤러핏"]
+                                                                    buttons: ["청바지-171~175-51kg~60kg-30-스키니핏", "청바지-171~175-51kg~60kg-30-슬림스트레이트핏", "청바지-171~175-51kg~60kg-30-레귤러핏"]
                                                                   }
                                                                 }
                                                                     render json: @response, status: :ok 
@@ -1933,7 +1933,7 @@ class UsersController < ApplicationController
                                                           elsif @response == "청바지-171~175-51kg~60kg-33"
                                                                 @response = {
                                                                   message: {
-                                                                      text: "#{@user.name}님의 평소 선호하는 바지핏을 선택해주세요"
+                                                                      text: "#{@user.name}님의 평소 선호하는 바지핏을 선택해주세���"
                                                                   },
                                                                   keyboard: {
                                                                     type: "buttons",
@@ -4211,6 +4211,384 @@ class UsersController < ApplicationController
 
 
 
+                                                                                        #결과값
+
+                                                                                      elsif @response == "청바지-165이하-51kg~60kg-28이하-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 키165 몸무게56kg의 다른 회원은 허리 28 기장29 사이즈의 레졸루트 710모델을 잘맞는다고 생각합니다. 관련상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok 
+
+                                                                                      elsif @response == "청바지-165이하-61kg~70kg-30-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 키162 몸무게64kg의 다른 회원은 허리 30 기장28의 레졸루트 710모델을 잘맞는다고 생각합니다. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                      elsif @response == "청바지-166~170-51kg~60kg-28-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 3명의 비슷한 회원들이 허리 28 기장 29을 가장 많이 추천했습니다. 기장을 조금 접어 롤업해서 입으시려면 기장 30을 선택해주세요. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-166~170-51kg~60kg-30-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 키166 몸무게59kg의 다른 회원은 허리 30 기장29의 레졸루트 710모델을 잘맞는다고 생각합니다. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-166~170-61kg~70kg-29-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 3명의 비슷한 회원들이 허리 29 기장 29을 가장 많이 추천했습니다. 기장을 조금 접어 롤업해서 입으시려면 기장 30을 선택해주세요. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-166~170-61kg~70kg-30-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 키168 몸무게64kg의 다른 회원은 허리 30 기장28의 레졸루트 710모델을 잘맞는다고 생각합니다. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-166~170-61kg~70kg-32-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 키168~170 몸무게68kg의 다른 회원은 허리 32 기장30의 레졸루트 710모델을 잘맞는다고 생각합니다. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-171~175-51kg~60kg-29-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 키172 몸무게60kg의 다른 회원은 허리 29 기장29의 레졸루트 710모델이 잘맞는다고 생각합니다. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-171~175-51kg~60kg-30-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 키171 몸무게60kg의 다른 회원은 허리 30 기장30의 레졸루트 710모델이 잘맞는다고 생각합니다. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-171~175-61kg~70kg-28이하-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 키171 몸무게68kg의 다른 회원은 허리 28 기장28의 레졸루트 710모델이 잘맞는다고 생각합니다. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-171~175-61kg~70kg-29-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 2명의 비슷한 회원들이 허리 29 기장 30을 가장 많이 추천했습니다. 기장을 조금 접어 롤업해서 입으시려면 기장 31을 선택해주세요. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-171~175-61kg~70kg-30-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 7명의 비슷한 회원들이 허리 30 기장 30을 가장 많이 추천했습니다. 기장을 조금 접어 롤업해서 입으시려면 기장 31을 선택해주세요. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-171~175-61kg~70kg-31-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 9명의 비슷한 회원들이 허리 31 기장 30을 가장 많이 추천했습니다. 기장을 조금 접어 롤업해서 입으시려면 기장 31을 선택해주세요. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-171~175-61kg~70kg-32-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 키175 몸무게68kg의 다른 회원은 허리 32 기장30의 레졸루트 710모델이 잘맞는다고 생각합니다. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-171~175-71kg~80kg-31-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 키172 몸무게72kg의 다른 회원은 허리31  기장29의 레졸루트 710모델이 잘맞는다고 생각합니다. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-171~175-71kg~80kg-32-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 키172 몸무게72kg의 다른 회원은 허리32  기장29의 레졸루트 710모델이 잘맞는다고 생각합니다. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-171~175-71kg~80kg-33-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 키175 몸무게74kg의 다른 회원은 허리33  기장30의 레졸루트 710모델이 잘맞는다고 생각합니다. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-171~175-71kg~80kg-34-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 키175 몸무게80kg의 다른 회원은 허리34  기장32의 레졸루트 710모델이 잘맞는다고 생각합니다. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-171~175-81kg~90kg-32-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 키174 몸무게82kg의 다른 회원은 허리32  기장29의 레졸루트 710모델이 잘맞는다고 생각합니다. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-176~180-51kg~60kg-28-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 키176 몸무게51kg의 다른 회원은 허리27  기장31의 레졸루트 710모델이 잘맞는다고 생각합니다. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-176~180-61kg~70kg-30-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 5명의 비슷한 회원들이 허리 30 기장 30을 가장 많이 추천했습니다. 기장을 조금 접어 롤업해서 입으시려면 기장 31을 선택해주세요. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-176~180-61kg~70kg-31-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 4명의 비슷한 회원들이 허리 31 기장 30을 가장 많이 추천했습니다. 기장을 조금 접어 롤업해서 입으시려면 기장 31을 선택해주세요. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-176~180-61kg~70kg-32-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 4명의 비슷한 회원들이 허리 32 기장 30을 가장 많이 추천했습니다. 기장을 조금 접어 롤업해서 입으시려면 기장 31을 선택해주세요. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-176~180-71kg~80kg-31-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 2명의 비슷한 회원들이 허리 31 기장 30을 가장 많이 추천했습니다. 기장을 조금 접어 롤업해서 입으시려면 기장 31을 선택해주세요. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-176~180-71kg~80kg-32-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 2명의 비슷한 회원들이 허리 32 기장 30을 가장 많이 추천했습니다. 기장을 조금 접어 롤업해서 입으시려면 기장 31을 선택해주세요. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-176~180-71kg~80kg-33-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 2명의 비슷한 회원들이 허리 33 기장 32을 가장 많이 추천했습니다. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-181~185-61kg~70kg-29-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 키182 몸무게64kg의 다른 회원은 허리29  기장31의 레졸루트 710모델이 잘맞는다고 생각합니다. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-181~185-61kg~70kg-30-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 키184 몸무게69kg의 다른 회원은 허리30  기장31의 레졸루트 710모델이 잘맞는다고 생각합니다. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-181~185-61kg~70kg-31-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 키181 몸무게68kg의 다른 회원은 허리31  기장32의 레졸루트 710모델이 잘맞는다고 생각합니다. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-181~185-61kg~70kg-32-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 키182 몸무게70kg의 다른 회원은 허리32  기장31의 레졸루트 710모델이 잘맞는다고 생각합니다. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-181~185-71kg~80kg-32-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 5명의 비슷한 회원들이 허리 32 기장 32을 가장 많이 추천했습니다. 기장을 조금 접어 롤업해서 입으시려면 기장 31을 선택해주세요. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-181~185-71kg~80kg-33-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 2명의 비슷한 회원들이 허리 33 기장 32을 가장 많이 추천했습니다. 기장을 조금 접어 롤업해서 입으시려면 기장 31을 선택해주세요. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-181~185-71kg~80kg-34-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 키183 몸무게80kg의 다른 회원은 허리34  기장30의 레졸루트 710모델을 구매했다가 33/31로 재구매하였습니다. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          elsif @response == "청바지-181~185-81kg~90kg-333-슬림 스트레이트핏"
+                                                                                      @response = {
+                                                                                        message: {
+                                                                                            text: "#{@user.name}님추천 : 키181 몸무게84kg의 다른 회원은 허리33  기장31의 레졸루트 710모델이 잘맞는다고 생각합니다. 관련 상품 구매하러가기->https://more-fit-jeongjeahyoun.c9users.io/detail/1"
+                                                                                        },
+                                                                                        keyboard: {
+                                                                                          type: "buttons",
+                                                                                          buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
+                                                                                        }
+                                                                                      }
+                                                                                          render json: @response, status: :ok
+                                                                                          
 
 
 
@@ -4222,74 +4600,10 @@ class UsersController < ApplicationController
 
 
 
-                          # 이전꺼
-                #           elsif @response == "청바지-171~175"
-                #       @response = {
-                #         message: {
-                #             text: "#{@user.name}님 몇키로임?"
-                #         },
-                #         keyboard: {
-                #           type: "buttons",
-                #           buttons: ["청바지,171~17,70kg", "청바지,171~17,80kg"]
-                #         }
-                #       }
-                #           render json: @response, status: :ok
-                # elsif @response == "청바지,166~170,70kg"
-                #                     @response = {
-                #                       message: {
-                #                           text: "#{@user.name}님에게 어울리는 상품은  ㄱ(제현) 입니다."
-                #                       },
-                #                       keyboard: {
-                #                         type: "buttons",
-                #                         buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
-                #                       }
-                #                     }
-                #                   render json: @response, status: :ok
-                #                   elsif @response == "청바지,166~170,80kg"
-                #                     @response = {
-                #                       message: {
-                #                           text: "#{@user.name}님에게 어울리는 상품은  2(펌킨) 입니다."
-                #                       },
-                #                       keyboard: {
-                #                         type: "buttons",
-                #                         buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
-                #                       }
-                #                     }
-                #                     render json: @response, status: :ok
-                #     elsif @response == "청바지,171~175"
-                #       @response = {
-                #         message: {
-                #             text: "#{@user.name}님 몇키로임?"
-                #         },
-                #         keyboard: {
-                #           type: "buttons",
-                #           buttons: ["청바지,171~175,70kg", "청바지,171~175,80kg"]
-                #         }
-                #       }
-                #           render json: @response, status: :ok
-                #                 elsif @response == "청바지,171~175,70kg"
-                #                     @response = {
-                #                       message: {
-                #                           text: "#{@user.name}님에게 어울리는 상품은  ㄷ(윤준) 입니다."
-                #                       },
-                #                       keyboard: {
-                #                         type: "buttons",
-                #                         buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
-                #                       }
-                #                     }
-                #                   render json: @response, status: :ok
-                                  
-                #                       elsif @response == "청바지,171~175,80kg"
-                #                     @response = {
-                #                       message: {
-                #                           text: "#{@user.name}님에게 어울리는 상품은  4(동원) 입니다."
-                #                       },
-                #                       keyboard: {
-                #                         type: "buttons",
-                #                         buttons: ["나에게 가장 잘맞는 청바지추천", "나에게 가장 잘맞는 정장바지추천", "나에게 가장 잘맞는 반바지추천"]
-                #                       }
-                #                     }
-                #                     render json: @response, status: :ok
+
+
+
+
             else
                 @response = {
                   message: {
@@ -4302,6 +4616,6 @@ class UsersController < ApplicationController
                 }
                  render json: @response, status: :ok
              end
-        end            
+        end
     end
 end
